@@ -315,6 +315,7 @@ span {
     margin: 0;
     padding: 0;
     color: dodgerblue;
+    text-shadow: dodgerblue 0px 0px 100px;
 }
 
 #Intr-desc {
@@ -328,26 +329,29 @@ span {
 #Intr-desc h4 {
     font-size: 50px;
     color: var(--fav-color);
-    background-color: #016b6b;
+    text-shadow: cyan 0px 0px 100px;
     border-radius: 10px;
-    width: 39%;
+    width: 41%;
     padding: 10px;
 }
 
-#Inter-desc p {
-    font-size: 25px;
+#Intr-desc p {
+    text-align: justify;
+    font-size: 22px;
     color: var(--color);
     background-color: var(--third-background);
-    border-radius: 10px;
-    width: 39%;
+    border-radius: 25px;
     padding: 10px;
 }
 
 #Intr-img {
     position: relative;
+    padding: 25px;
+    border-radius: 50px;
 }
 
 #Intr-img img {
+    box-shadow: dodgerblue 0px 0px 100px;
     border-radius: 25%;
     border: 4px solid var(--color);
 }
