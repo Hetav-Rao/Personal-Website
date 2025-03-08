@@ -1,0 +1,429 @@
+/* This is for the entire webpage */
+
+:root {
+    --background-color: black;
+    --color: white;
+    --font-family: monospace;
+    --font-size: x-large;
+    --secondary-background: white;
+    --secondary-color: black;
+    --secondary-font-size: xx-large;
+    --fav-color: cyan;
+    --third-background: #111;
+}
+
+html {
+    background-color: var(--background-color);
+    color: var(--color);
+    font-family: monospace;
+    font-size:x-large;
+}
+
+/*This si only for the nav bar and side bar*/
+
+.navbar-div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-item {
+    display: inline;
+    padding: 25px;
+}
+
+@keyframes ahover {
+    from {background-color: var(--secondary-background);
+        color: var(--secondary-color);
+        font-size: var(--font-size);}
+    to {background-color: var(--background-color);
+        color: var(--color);
+        font-size: var(--secondary-font-size);}
+}
+
+.navbar-item a:hover {
+    background-color: var(--background-color);
+    color: var(--color);
+    animation-name: ahover;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes anothover {
+    from {background-color: var(--background-color);
+        color: var(--color);
+        font-size: var(--secondary-font-size);}
+    to {
+        background-color: var(--secondary-background);
+        color: var(--secondary-color);
+        font-size: var(--font-size);}
+}
+
+.navbar-item a {
+    background-color: var(--secondary-background);
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    animation-name: anothover;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+
+}
+
+button {
+    cursor: pointer;
+}
+
+.openbtn {
+    background-color: var(--background-color);
+    border: 0;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+}
+
+#logo-img{
+    background-color: var(--background-color);
+    border: 0;
+}
+
+#settings {
+    width: 50px;
+    height: 50px;
+}
+
+#settings-img{
+    background-color: var(--background-color);
+    border: 0;
+    width: 50px;
+    height: 50px;
+}
+
+#sidebar-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--background-color);
+    color: var(--color);
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 1px solid var(--color);
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: var(--third-background); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+  
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--color);
+    display: block;
+    transition: 0.3s;
+}
+  
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: var(--fav-color);
+}
+  
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+}
+
+.a-btn {
+    cursor: pointer;
+}
+  
+#dropdown-personal {
+    display: none;
+    position: absolute;
+    background-color: var(--background-color);
+    color: var(--color);
+    width: 200px;
+    z-index: 1;
+    border: 1px solid var(--color);
+}
+
+#dropdown-personal .dropItem:hover {
+    color: var(--fav-color);
+}
+
+#dropdown-contacts {
+    display: none;
+    position: absolute;
+    background-color: var(--background-color);
+    color: var(--color);
+    width: 230px;
+    z-index: 1;
+    border: 1px solid var(--color);
+}
+
+#dropdown-contacts .dropItem:hover {
+    color: var(--fav-color);
+}
+
+.dropItem img {
+    width: 30px;
+    height: 30px;
+}
+
+#moreDrop {
+    display: none;
+    position: absolute;
+    background-color: var(--background-color);
+    color: var(--color);
+    width: 230px;
+    z-index: 1;
+    border: 1px solid var(--color);
+}
+
+span {
+    display: flex;
+}
+
+#ytWidLin:hover {
+    content: url('images/contacts/youtube-hover.png');
+}
+
+#dcWidLin:hover {
+    content: url('images/contacts/discord-hover.png');
+}
+
+#xWidLin:hover {
+    content: url('images/contacts/x-hover.png');
+}
+
+#instaWidLin:hover {
+    content: url('images/contacts/instagram-hover.png');
+}
+
+#redWidLin:hover {
+    content: url('images/contacts/reddit-hover.png');
+}
+
+#gitWidLin:hover {
+    content: url('images/contacts/github-hover.png');
+}
+
+#fbWidLin:hover {
+    content: url('images/contacts/facebook-hover.png');
+}
+
+#thrWidLin:hover {
+    content: url('images/contacts/threads-hover.png');
+}
+
+#ttWidLin:hover {
+    content: url('images/contacts/tik-tok-hover.png');
+}
+
+#twiWidLin:hover {
+    content: url('images/contacts/twitch-hover.png');
+}
+
+#telWidLin:hover {
+    content: url('images/contacts/telegram-hover.png');
+}
+
+#whaWidLin:hover {
+    content: url('images/contacts/whatsapp-hover.png');
+}
+
+#wikiWidLin:hover {
+    content: url('images/contacts/wikipedia-hover.png');
+}
+
+#linWidLin:hover {
+    content: url('images/contacts/linkedin-hover.png');
+}
+
+/* This is for the welcome page */
+
+#H_R_div {
+    display: block;
+    text-align: center;
+    color: var(--color);
+    background-image: url('images/welcome-page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    height: 75vh;
+}
+
+#H_R_div h1 {
+    font-size: 100px;
+}
+
+#H_R_div h2 {
+    font-size: 50px;
+}
+
+#H_R_div a {
+    text-decoration: none;
+    color: var(--color);
+}
+
+#H_R_div a:hover {
+    color: var(--fav-color);
+}
+
+/* This is for the Introduction Page */
+
+#Intr {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+}
+
+#Intr-title{
+    display: flex;
+    font-size: 50px;
+    text-align: center;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    color: dodgerblue;
+}
+
+#Intr-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-right: 300px;
+}
+
+#Intr-desc h4 {
+    font-size: 50px;
+    color: var(--fav-color);
+    background-color: #016b6b;
+    border-radius: 10px;
+    width: 39%;
+    padding: 10px;
+}
+
+#Inter-desc p {
+    font-size: 25px;
+    color: var(--color);
+    background-color: var(--third-background);
+    border-radius: 10px;
+    width: 39%;
+    padding: 10px;
+}
+
+#Intr-img {
+    position: relative;
+}
+
+#Intr-img img {
+    border-radius: 25%;
+    border: 4px solid var(--color);
+}
+
+#Intr-img button{
+    border-radius: 20px;
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    background-color: var(--background-color);
+    color: var(--color);
+    position: absolute; /* set button to an absolute position */
+    top: 10%;
+    right: 1%;
+    transform: translate(-50%, -50%); /* center the button */
+    z-index: 2; /* set a higher z-index than the image */
+    cursor: pointer;
+    border: 2px solid var(--color);
+
+}
+
+#more-info-a{
+    display: none;
+    position: absolute;
+    background-color: var(--background-color);
+    padding: 2px;
+    border-color: var(--color);
+    border-radius: 5px;
+    color: var(--color);
+    font-size: 15px;
+}
+
+#more-info-a:hover {
+    color: var(--fav-color);
+    cursor: pointer;
+}
+
+#more-info-btn:hover #more-info-a{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    
+}
