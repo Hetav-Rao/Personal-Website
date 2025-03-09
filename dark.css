@@ -19,13 +19,29 @@ html {
     font-size:x-large;
     scroll-behavior: smooth;
     scrollbar-color: var(--fav-color) var(--background-color);
+    user-select: none;
 }
 
 /*This si only for the nav bar and side bar*/
 
+.navbar {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    color: var(--color);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    margin-top: -10px;
+    z-index: 1;
+    border-bottom: 1px solid var(--color);
+}
+
 .navbar-div{
     display: flex;
     justify-content: space-around;
+    
 }
 
 .navbar-item {
@@ -34,14 +50,14 @@ html {
 }
 
 @keyframes ahover {
-    from {text-shadow: var(--background-color) 0px 0px 50px;
+    from {text-shadow: var(--background-color) 0px 0px 50px, var(--background-color) 0px 0px 50px, var(--background-color) 0px 0px 5px;
         font-size: var(--font-size);}
-    to {text-shadow: var(--secondary-background) 0px 0px 50px;
+    to {text-shadow: var(--secondary-background) 0px 0px 50px, var(--secondary-background) 0px 0px 50px, var(--secondary-background) 0px 0px 5px;
         font-size: var(--secondary-font-size);}
 }
 
 .navbar-item a:hover {
-    text-shadow: var(--secondary-background) 0px 0px 50px;
+    text-shadow: var(--secondary-background) 0px 0px 50px, var(--secondary-background) 0px 0px 50px, var(--secondary-background) 0px 0px 5px;
     color: var(--color);
     animation-name: ahover;
     animation-duration: 0.2s;
@@ -50,15 +66,15 @@ html {
 }
 
 @keyframes anothover {
-    from {text-shadow: var(--secondary-background) 0px 0px 50px;
+    from {text-shadow: var(--secondary-background) 0px 0px 50px, var(--secondary-background) 0px 0px 50px, var(--secondary-background) 0px 0px 5px;
         font-size: var(--secondary-font-size);}
     to {
-        text-shadow: var(--background-color) 0px 0px 50px;
+        text-shadow: var(--background-color) 0px 0px 50px, var(--background-color) 0px 0px 50px, var(--background-color) 0px 0px 5px;
         font-size: var(--font-size);}
 }
 
 .navbar-item a {
-    text-shadow: var(--background-color) 0px 0px 50px;
+    text-shadow: var(--background-color) 0px 0px 50px, var(--background-color) 0px 0px 50px, var(--background-color) 0px 0px 5px;
     border-radius: 10px;
     padding: 10px;
     color: var(--color);
@@ -313,7 +329,7 @@ span {
     margin: 0;
     padding: 0;
     color: dodgerblue;
-    text-shadow: dodgerblue 0px 0px 100px;
+    text-shadow: dodgerblue 0px 0px 100px, dodgerblue 0px 0px 4px;
 }
 
 #Intr-desc {
@@ -327,7 +343,7 @@ span {
 #Intr-desc h4 {
     font-size: 50px;
     color: var(--fav-color);
-    text-shadow: var(--fav-color) 0px 0px 100px;
+    text-shadow: var(--fav-color) 0px 0px 100px, var(--fav-color) 0px 0px 100px, var(--fav-color) 0px 0px 4px;
     border-radius: 10px;
     width: 41%;
     padding: 10px;
