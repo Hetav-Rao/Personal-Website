@@ -17,6 +17,8 @@ html {
     color: var(--color);
     font-family: monospace;
     font-size:x-large;
+    scroll-behavior: smooth;
+    scrollbar-color: var(--fav-color) var(--background-color);
 }
 
 /*This si only for the nav bar and side bar*/
@@ -32,16 +34,14 @@ html {
 }
 
 @keyframes ahover {
-    from {background-color: var(--secondary-background);
-        color: var(--secondary-color);
+    from {text-shadow: var(--background-color) 0px 0px 50px;
         font-size: var(--font-size);}
-    to {background-color: var(--background-color);
-        color: var(--color);
+    to {text-shadow: var(--secondary-background) 0px 0px 50px;
         font-size: var(--secondary-font-size);}
 }
 
 .navbar-item a:hover {
-    background-color: var(--background-color);
+    text-shadow: var(--secondary-background) 0px 0px 50px;
     color: var(--color);
     animation-name: ahover;
     animation-duration: 0.2s;
@@ -50,20 +50,18 @@ html {
 }
 
 @keyframes anothover {
-    from {background-color: var(--background-color);
-        color: var(--color);
+    from {text-shadow: var(--secondary-background) 0px 0px 50px;
         font-size: var(--secondary-font-size);}
     to {
-        background-color: var(--secondary-background);
-        color: var(--secondary-color);
+        text-shadow: var(--background-color) 0px 0px 50px;
         font-size: var(--font-size);}
 }
 
 .navbar-item a {
-    background-color: var(--secondary-background);
+    text-shadow: var(--background-color) 0px 0px 50px;
     border-radius: 10px;
     padding: 10px;
-    color: var(--secondary-color);
+    color: var(--color);
     text-decoration: none;
     animation-name: anothover;
     animation-duration: 0.2s;
@@ -329,7 +327,7 @@ span {
 #Intr-desc h4 {
     font-size: 50px;
     color: var(--fav-color);
-    text-shadow: cyan 0px 0px 100px;
+    text-shadow: var(--fav-color) 0px 0px 100px;
     border-radius: 10px;
     width: 41%;
     padding: 10px;
