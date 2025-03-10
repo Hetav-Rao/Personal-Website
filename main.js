@@ -1,6 +1,4 @@
-
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-let isOpen = false; // This keeps track of the sidebar's state
+let isOpen = false; 
 
 function Nav() {
   if (isOpen) {
@@ -11,10 +9,10 @@ function Nav() {
     document.getElementById("main").style.marginLeft = "250px";
   }
   
-  isOpen = !isOpen; // Toggle the state
+  isOpen = !isOpen; 
 }
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+
 
 let DropisOpen = true;
 let DropisOpen2 = true;
@@ -33,7 +31,7 @@ function Drop() {
     document.getElementById("space").style.height = "auto";
   }
   
-  DropisOpen = !DropisOpen; // Toggle the state
+  DropisOpen = !DropisOpen;
 }
 
 function Drop2() {
@@ -43,7 +41,7 @@ function Drop2() {
     document.getElementById("dropdown-contacts").style.display = "none";
   }
   
-  DropisOpen2 = !DropisOpen2; // Toggle the state
+  DropisOpen2 = !DropisOpen2; 
 }
 
 function Drop3() {
@@ -53,7 +51,7 @@ function Drop3() {
     document.getElementById("moreDrop").style.display = "none";
   }
   
-  DropisOpen3 = !DropisOpen3; // Toggle the state
+  DropisOpen3 = !DropisOpen3; 
 }
 
 function theme() {
